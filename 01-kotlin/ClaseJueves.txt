@@ -1,0 +1,55 @@
+fun main() {
+    println("Hello, world!!!")
+
+
+//Tipos de Varibles
+//Mutables
+var apellido="Azadobay"
+
+//Inmutables
+val nombre="Jose"
+
+//Tipos de datos
+val apellido1= "Azadobay"
+val edad=29
+val sueldo = 1.21
+val casado = false
+val hijos = null
+
+//Condicionales
+
+if (apellido == "Azadobay") {
+    
+println("Verdadero")
+}
+else {
+    println("falso")
+}
+
+
+val tieneNombreyApellido = if(apellido != null && nombre != null) "ok" else "no";
+    println(tieneNombreyApellido);
+    
+    estaJalado(5.0);
+    
+    estaJalado(10.0);    
+    estaJalado(8.0);
+
+
+}
+
+
+fun estaJalado(nota:Double){
+    when (nota){
+        5.0 -> {
+            println("Se quedo");
+        } 
+        10.0 -> {
+            println("Felicitacion");
+        }
+        else ->{
+            println("tu nota es: ${nota}")
+            println("tu nota es: $nota")
+        }
+    }
+}
