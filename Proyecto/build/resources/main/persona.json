@@ -1,0 +1,19 @@
+{
+  "personas": [
+    {
+      "codigoP": 1,
+      "nombre": "Pedro",
+      "edad":10
+    },
+    {
+      "codigoP": 2,
+      "nombre": "Juan",
+      "edad":10
+    },
+    {
+      "codigoP": 3,
+      "nombre": "Pablo",
+      "edad":10
+    }
+  ]
+}
