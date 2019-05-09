@@ -1,7 +1,7 @@
 package Clases
 
 class Persona {
-    var codigoP=0
+    var codigoP=""
     var nombre = ""
     var edad = 0
 }

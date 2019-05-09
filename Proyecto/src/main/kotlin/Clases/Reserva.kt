@@ -1,7 +1,8 @@
 package Clases
 
 class Reserva {
-    val codReserva = 0
-    val codigoPersona= 0
-    val codigoLibro = 0
+    var codReserva = 0
+    var persona= Persona()
+    var libro = Libro()
+    var estado=""
 }
