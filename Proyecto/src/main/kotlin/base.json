@@ -1,0 +1,40 @@
+{
+  "libros": [
+    {
+      "codigo": 1,
+      "nombre": "Libro1"
+    },
+    {
+      "codigo": 2,
+      "nombre": "Libro2"
+    },
+    {
+      "codigo": 3,
+      "nombre": "Libro3"
+    }
+  ],
+  "personas": [
+    {
+      "codigoP": 1,
+      "nombre": "Pedro",
+      "edad":10
+    },
+    {
+      "codigoP": 2,
+      "nombre": "Juan",
+      "edad":10
+    },
+    {
+      "codigoP": 3,
+      "nombre": "Pablo",
+      "edad":10
+    }
+  ],
+  "reservas": [
+    {
+      "codReserva": 1,
+      "codigoPersona": 1,
+      "codigoLibro": 3
+    }
+  ]
+}
