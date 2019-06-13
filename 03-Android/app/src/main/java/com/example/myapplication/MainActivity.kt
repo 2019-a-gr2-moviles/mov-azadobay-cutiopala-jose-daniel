@@ -16,7 +16,52 @@ class MainActivity : AppCompatActivity() {
         btn_parcelable.setOnClickListener {
             irAParcelable()
         }
+        btn_toast.setOnClickListener {
+            irAToast()
+        }
+        btn_adapter.setOnClickListener {
+            irAListView()
+        }
+        btn_recycler_view.setOnClickListener {
+            irArecyclerView()
+        }
+        btn_respuesta.setOnClickListener {
+            irAIntentRespuesta()
+        }
     }
+
+    fun irAIntentRespuesta(){
+        val intentExplicito = Intent(
+            this,
+            IntentRespuestaActivity:: class.java
+        )
+        startActivity(intentExplicito);
+    }
+
+    fun irArecyclerView(){
+        val intentExplicito = Intent(
+            this,
+            ReciclerViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun irAToast(){
+        val intentExplicito = Intent(
+            this,
+            Main2Activity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
+    fun irAListView(){
+        val intentExplicito = Intent(
+            this,
+            ListViewActivity::class.java
+        )
+        startActivity(intentExplicito)
+    }
+
 
     fun irAParcelable(){
         val intentExplicito = Intent(
@@ -28,6 +73,11 @@ class MainActivity : AppCompatActivity() {
             Date(),
             12.12)
         intentExplicito.putExtra("usuario",adrian)
+
+        val cachetes = Mascota("Cachetes", adrian)
+        intentExplicito.putExtra("mascota", cachetes)
+
+
         startActivity(intentExplicito)
 
 
