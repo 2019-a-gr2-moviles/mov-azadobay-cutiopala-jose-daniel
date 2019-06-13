@@ -22,6 +22,28 @@ class MainActivity : AppCompatActivity() {
         btn_adapter.setOnClickListener {
             irAListView()
         }
+        btn_recycler_view.setOnClickListener {
+            irArecyclerView()
+        }
+        btn_respuesta.setOnClickListener {
+            irAIntentRespuesta()
+        }
+    }
+
+    fun irAIntentRespuesta(){
+        val intentExplicito = Intent(
+            this,
+            IntentRespuestaActivity:: class.java
+        )
+        startActivity(intentExplicito);
+    }
+
+    fun irArecyclerView(){
+        val intentExplicito = Intent(
+            this,
+            ReciclerViewActivity::class.java
+        )
+        startActivity(intentExplicito)
     }
 
     fun irAToast(){

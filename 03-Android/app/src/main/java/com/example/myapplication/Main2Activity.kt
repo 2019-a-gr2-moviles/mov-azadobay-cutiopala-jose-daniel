@@ -18,14 +18,15 @@ class Main2Activity : AppCompatActivity() {
             Snackbar
                 .make(view, "Gracias por crear un nuevo usuario", Snackbar.LENGTH_LONG)
                 .setAction("Action", null)
-            crearEntrenador(view)
+            mostrarSnack(view, "Gracias por crear un nuevo usuario")
         }
     }
 
-    fun crearEntrenador(view: View){
+    fun mostrarSnack(view: View, texto:String){
         Snackbar
-            .make(view, "Gracias por crear un nuevo usuario", Snackbar.LENGTH_LONG)
+            .make(view, texto, Snackbar.LENGTH_LONG)
             .setAction("Action", null)
+            .show()
 
     }
 

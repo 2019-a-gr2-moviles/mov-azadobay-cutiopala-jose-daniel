@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="Gestionar">Manage </string>
+    <string name="home_nombre">Set your name</string>
+    <string name="a_m_autor">" Author"</string>
+    <string name="a_m_nuevo_autor">New Author</string>
+    <string name="trl_aceptar">Accept</string>
+    <string name="trl_cancelar">Cancel</string>
+    <string name="trl_actualizarLibro">Update Book</string>
+    <string name="trl_eliminarLibro">Delete Book</string>
+    <string name="autor_delete">Delete</string>
+    <string name="autor_update">Update</string>
+    <string name="trl_crearLibro">Create Book</string>
+    <string name="trl_GestionarLibro">Manage Book</string>
+    <string name="trl_menu">Menu</string>
+    <string name="trl_guardar">Save</string>
+</resources>

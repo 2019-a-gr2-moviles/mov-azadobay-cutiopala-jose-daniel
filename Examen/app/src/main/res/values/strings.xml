@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Examen</string>
+    <string name="Gestionar">Gestionar</string>
+    <string name="home_nombre">Ingrese Nombre</string>
+    <string name="a_m_autor">Autor</string>
+    <string name="a_m_nuevo_autor">Nuevo Autor</string>
+    <string name="trl_aceptar">Aceptar</string>
+    <string name="trl_cancelar">Cancelar</string>
+    <string name="trl_actualizarLibro">Actualizar Libro</string>
+    <string name="trl_eliminarLibro">Eliminar Libro</string>
+    <string name="autor_delete">Eliminar</string>
+    <string name="autor_update">Actualizar</string>
+    <string name="trl_crearLibro">Crear Libro</string>
+    <string name="trl_GestionarLibro">Gestionar Libro</string>
+    <string name="trl_menu">Menu</string>
+    <string name="trl_guardar">Guardar</string>
+</resources>
