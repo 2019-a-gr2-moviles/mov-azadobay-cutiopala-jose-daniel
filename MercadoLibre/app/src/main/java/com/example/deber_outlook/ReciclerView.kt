@@ -39,7 +39,7 @@ class ReciclerView : AppCompatActivity() {
                 "Telefonos Xiaomi Mi, Redmi Y Note 7 De 64gb Y 128 Gb",
                 "U$165",
                 "Nuevo  -  34 vendidos",
-                2,
+                3,
                 "Un amigo quiere que indiques que te gusta una página en Facebook",
                 "para Jenny Castro"
             )

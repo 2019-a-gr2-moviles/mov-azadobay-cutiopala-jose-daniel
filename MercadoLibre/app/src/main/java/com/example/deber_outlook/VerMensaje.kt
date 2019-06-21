@@ -20,7 +20,7 @@ class VerMensaje : AppCompatActivity() {
         else if(mensaje?.id_usuario==2){
             img_anuncio.setImageResource(R.mipmap.huawei)
         }
-        else{
+        else if(mensaje?.id_usuario==3){
             img_anuncio.setImageResource(R.mipmap.xiaomi)
             //img_icon.setImageResource(R.mipmap.icon2)
         }
