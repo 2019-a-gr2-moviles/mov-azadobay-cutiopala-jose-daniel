@@ -8,6 +8,63 @@
         tools:context=".Libros.Actualizar_Libro">
 
 
-
-
+    <TextView
+            android:text="TextView"
+            android:layout_width="197dp"
+            android:layout_height="35dp"
+            android:id="@+id/actId" android:layout_marginTop="16dp"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.419"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/actTit"
+            app:layout_constraintStart_toStartOf="@+id/actId" app:layout_constraintEnd_toEndOf="@+id/actId"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/actId"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/actAut"
+            app:layout_constraintStart_toStartOf="@+id/actTit" app:layout_constraintEnd_toEndOf="@+id/actTit"
+            android:layout_marginTop="12dp" app:layout_constraintTop_toBottomOf="@+id/actTit"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/actEdit"
+            app:layout_constraintStart_toStartOf="@+id/actAut" app:layout_constraintEnd_toEndOf="@+id/actAut"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/actAut"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/actNumEd"
+            app:layout_constraintStart_toStartOf="@+id/actEdit" app:layout_constraintEnd_toEndOf="@+id/actEdit"
+            android:layout_marginTop="20dp" app:layout_constraintTop_toBottomOf="@+id/actEdit"
+            app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/actStock"
+            app:layout_constraintStart_toStartOf="@+id/actNumEd" app:layout_constraintEnd_toEndOf="@+id/actNumEd"
+            app:layout_constraintHorizontal_bias="0.0" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/actNumEd"/>
+    <Button
+            android:text="Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" tools:layout_editor_absoluteY="423dp"
+            android:id="@+id/btnEliminar" app:layout_constraintStart_toStartOf="@+id/actStock"
+            app:layout_constraintEnd_toEndOf="@+id/actStock"/>
 </androidx.constraintlayout.widget.ConstraintLayout>
