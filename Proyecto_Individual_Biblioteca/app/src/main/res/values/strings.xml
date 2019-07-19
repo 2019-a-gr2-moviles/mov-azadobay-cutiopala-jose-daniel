@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Proyecto_Biblioteca</string>
+    <string name="txt_libros">LIBROS</string>
+    <string name="txt_lector">LECTORES</string>
+    <string name="txt_solicitud">RESERVAS</string>
+    <string name="nuevoLibro">Ingresar Nuevo Libro</string>
+    <string name="nuevaReserva">Nueva Reserva</string>
+    <string name="ingresar">Crear Libro</string>
+    <string name="insertar">Registrar Lector</string>
+    <string name="nuevoLector">Nuevo Lector</string>
+    <string name="actualizar">ACTUALIZAR</string>
+    <string name="verLibros">Consultar Libros</string>
+    <string name="listaLectores">Lista Lectores</string>
+    <string name="verReservas">Ver Reservas</string>
+    <string name="modificarEliminar">MODIFICAR O ELIMINAR</string>
+    <string name="title_activity_menu_clientes">MENU CLIENTES</string>
+    <string name="title_activity_menu_zapatos">MENU ZAPATOS</string>
+    <string name="nombre_cliente">Nombre</string>
+    <string name="id_cliente">Id</string>
+    <string name="apellido_cliente">Apellido</string>
+    <string name="cedula_cliente">Cedula</string>
+    <string name="btn_eliminar">Eliminar</string>
+    <string name="codigo">CODIGO:</string>
+    <string name="id_zapato">Id</string>
+    <string name="marca_zapato">Marca</string>
+    <string name="color_zapato">Color</string>
+    <string name="talla_zapato">Talla</string>
+    <string name="tipo_zapato">Tipo</string>
+    <string name="cantidad_zapato">Cantidad</string>
+    <string name="precio_zapato">Precio</string>
+    <string name="datos_cliente">Ingrese los datos del cliente solicitados</string>
+    <string name="datos_zapato">Ingrese los datos del zapato</string>
+    <string name="id_compra">Id</string>
+    <string name="fecha_compra">Fecha</string>
+    <string name="validez_compra">Validez</string>
+    <string name="zapato_compra">Zapatos</string>
+    <string name="anular_compra">ANULAR</string>
+
+</resources>

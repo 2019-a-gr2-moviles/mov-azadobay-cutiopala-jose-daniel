@@ -18,7 +18,18 @@ module.exports = {
       type: 'boolean',
       defaultsTo: false
 
+    },
+
+    idLibro: {
+      model: 'libro',
+    },
+
+    idLector: {
+      model: 'lector'
     }
+
+
+    
 
   },
 

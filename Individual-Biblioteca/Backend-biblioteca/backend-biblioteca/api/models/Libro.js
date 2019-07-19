@@ -24,14 +24,19 @@ module.exports = {
       required: true
     },
 
-    numEdicion: {
+    numeroEdicion: {
       type: 'string',
-      required
+      required: true
     },
 
     stock: {
       type: 'number',
       required: true
+    },
+
+    LibroSolicitud: {
+      collection: 'solicitud',
+      via: 'idLibro'
     }
 
   },

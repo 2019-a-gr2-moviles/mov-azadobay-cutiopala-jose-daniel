@@ -22,6 +22,11 @@ module.exports = {
     cedula: {
       type: 'string',
       required: true
+    },
+
+    LectorSolicitud: {
+      collection: 'solicitud',
+      via: 'idLector'
     }
 
 
