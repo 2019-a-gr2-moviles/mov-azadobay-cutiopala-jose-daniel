@@ -10,6 +10,7 @@ import com.github.kittinunf.fuel.core.Parameters
 import com.github.kittinunf.fuel.httpPut
 import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_actualizar__libro.*
+import kotlinx.android.synthetic.main.layout_libros.*
 
 class Actualizar_Libro : AppCompatActivity() {
 
@@ -17,70 +18,55 @@ class Actualizar_Libro : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_actualizar__libro)
 
-        val zapatoMarca: String? = this.intent.getStringExtra("zapato-marca")
-        val zapatoColor: String? = this.intent.getStringExtra("zapato-color")
-        val zapatoTipo: String? = this.intent.getStringExtra("zapato-tipo")
-        val zapatoTalla: String? = this.intent.getStringExtra("zapato-talla")
-        val zapatoId: Int? = this.intent.getIntExtra("zapato-id", -1)
-        val zapatoCantidad: Int? = this.intent.getIntExtra("zapato-cantidad", -1)
+        val tituloDeLibro: String? = this.intent.getStringExtra("zapato-marca")
+        val autorDeLibro: String? = this.intent.getStringExtra("zapato-color")
+        val editorialDeLibro: String? = this.intent.getStringExtra("zapato-tipo")
+        val numeroEdicionLibro: String? = this.intent.getStringExtra("zapato-talla")
+        val LibroId: Int? = this.intent.getIntExtra("zapato-id", -1)
+        val stockDeLibro: Int? = this.intent.getIntExtra("zapato-cantidad", -1)
 
 
         Log.i(
             "http",
-            "$zapatoId $zapatoMarca $zapatoColor $zapatoTalla $zapatoTipo $zapatoCantidad"
+            "$LibroId $tituloDeLibro $autorDeLibro $numeroEdicionLibro $editorialDeLibro $stockDeLibro"
         )
 
-        actId.text = zapatoId.toString()
-        actTit.hint = zapatoMarca
-        actAut.hint = zapatoColor
-        actEdit.hint = zapatoTipo
-        actNumEd.hint = zapatoTalla.toString()
-        actStock.hint = zapatoCantidad.toString()
+        txt_actualizarId.text = LibroId.toString()
+        txt_actual.hint = tituloDeLibro
+        txt_actualizarActor.hint = autorDeLibro
+        txt_actualizarEditorial.hint = editorialDeLibro
+        txt_actualizarNumeroEditorial.hint = numeroEdicionLibro
+        txt_actualizarStock.hint = stockDeLibro.toString()
 
 
-        btnEliminar.setOnClickListener {
-            val zapato = Libro(
-//                null,
+        btn_actualizarLibro.setOnClickListener {
+            val libroActualizado = Libro(
                 null,
                 null,
-                actId.text.toString().toInt(),
-                actTit.text.toString(),
-                actAut.text.toString(),
-                actEdit.text.toString(),
-                actNumEd.text.toString(),
-                actStock.text.toString().toInt()
+                txt_actualizarId.text.toString().toInt(),
+                txt_actual.text.toString(),
+                txt_actualizarActor.text.toString(),
+                txt_actualizarEditorial.text.toString(),
+                txt_actualizarNumeroEditorial.text.toString(),
+                txt_actualizarStock.text.toString().toInt()
 
             )
-            actualizarZapato(zapato)
+            actualizarZapato(libroActualizado)
         }
     }
 
-    fun actualizarZapato(zapato: Libro) {
+    fun actualizarZapato(libroActual: Libro) {
 
-        val url = Constantes.ip + Constantes.libro + "/${zapato.id}"
+        val url = Constantes.ip + Constantes.libro + "/${libroActual.id}"
         Log.i("url","url to patch ${url}")
 
         val parametros = listOf(
-            "titulo" to "${zapato.titulo}",
-        "autor" to "${zapato.autor}",
-        "editorial" to "${zapato.editorial}",
-        "numeroEdicion" to "${zapato.numeroEdicion}",
-        "stock" to "${zapato.stock}"
+            "titulo" to "${libroActual.titulo}",
+        "autor" to "${libroActual.autor}",
+        "editorial" to "${libroActual.editorial}",
+        "numeroEdicion" to "${libroActual.numeroEdicion}",
+        "stock" to "${libroActual.stock}"
         )
-
-
-
-        /*
-        val json = """
-            {
-            "titulo": "${zapato.titulo}",
-            "autor": "${zapato.autor}",
-            "editorial": "${zapato.editorial}",
-            "numeroEdicion": "${zapato.numeroEdicion}",
-            "stock": "${zapato.stock}"
-
-                                   }
-                    """*/
 
         url.httpPut(parametros)
             .responseString { request, response, result ->
@@ -92,7 +78,7 @@ class Actualizar_Libro : AppCompatActivity() {
                     is Result.Success -> {
                         Log.i("http", "$response")
                         runOnUiThread {
-                                                        irListaZapatos()
+                            irListaZapatos()
                             this.finish()
                         }
                     }
