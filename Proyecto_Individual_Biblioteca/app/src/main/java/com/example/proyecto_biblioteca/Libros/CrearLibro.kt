@@ -65,13 +65,6 @@ class CrearLibro : AppCompatActivity() {
             }
     }
 
-//    fun irListaLibros() {
-//        intent = Intent(
-//            this,
-//            MenuLibros  ::class.java
-//        )
-//        startActivity(intent)
-//    }
 }
 
 

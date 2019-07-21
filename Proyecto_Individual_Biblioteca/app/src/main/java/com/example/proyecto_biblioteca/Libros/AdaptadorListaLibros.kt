@@ -16,6 +16,7 @@ class AdaptadorListaLibros(private val listaLibros: ArrayList<Libro>,
 ): androidx.recyclerview.widget.RecyclerView.Adapter<AdaptadorListaLibros.MyViewHolder>(){
 
     inner class MyViewHolder(view: View) : androidx.recyclerview.widget.RecyclerView.ViewHolder(view) {
+
         var idTextView: TextView
         var tituloTextView: TextView
         var autorTextView: TextView
@@ -25,7 +26,9 @@ class AdaptadorListaLibros(private val listaLibros: ArrayList<Libro>,
         var eliminarBoton: Button
 
 
+
         init {
+
             idTextView = view.findViewById(R.id.txt_id_libro) as TextView
             tituloTextView = view.findViewById(R.id.txt_titulo) as TextView
             autorTextView = view.findViewById(R.id.txt_autor) as TextView
@@ -36,7 +39,8 @@ class AdaptadorListaLibros(private val listaLibros: ArrayList<Libro>,
 
             val layout = view.findViewById(R.id.layout) as RelativeLayout
             layout.setOnClickListener {
-                val zapato = nuevoLibro(
+
+                val nuevoLibro = nuevoLibro(
                     idTextView.text.toString().toInt(),
                     tituloTextView.text.toString(),
                     autorTextView.text.toString(),
@@ -44,9 +48,8 @@ class AdaptadorListaLibros(private val listaLibros: ArrayList<Libro>,
                     numeroEdicion.text.toString(),
                     stockTextView.text.toString().toInt()
                 )
-                contexto.irActulizarLibro(zapato)
+                contexto.irActulizarLibro(nuevoLibro)
             }
-
             eliminarBoton.setOnClickListener {
 
                 val libro = nuevoLibro(

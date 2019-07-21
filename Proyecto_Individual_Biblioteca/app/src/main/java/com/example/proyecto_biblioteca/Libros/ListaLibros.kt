@@ -35,7 +35,6 @@ class ListaLibros : AppCompatActivity() {
         adaptadorLibro.notifyDataSetChanged()
     }
 
-
     fun obtenerLibros() {
 
         val url = (Constantes.ip + Constantes.libro)

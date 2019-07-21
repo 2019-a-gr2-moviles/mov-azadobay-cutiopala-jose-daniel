@@ -3,6 +3,7 @@ package com.example.proyecto_biblioteca
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.proyecto_biblioteca.Lectores.MenuLectores
 import com.example.proyecto_biblioteca.Libros.MenuLibros
 import kotlinx.android.synthetic.main.activity_main.*
 

@@ -13,11 +13,17 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
-
-
+        <activity android:name=".Lectores.ListaLector">
+        </activity>
+        <activity android:name=".Lectores.ActualizarLector">
+        </activity>
+        <activity android:name=".Lectores.CrearLector">
+        </activity>
+        <activity android:name=".Lectores.ListaLectores">
+        </activity>
         <activity android:name=".MenuSolicitudes">
         </activity>
-        <activity android:name=".MenuLectores">
+        <activity android:name=".Lectores.MenuLectores">
         </activity>
         <activity android:name=".Libros.ListaLibros">
         </activity>
