@@ -103,11 +103,17 @@
     <Button
             android:text="@string/btn_eliminar"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btn_eliminarLibro" android:layout_marginTop="14dp"
+            android:layout_height="wrap_content" android:id="@+id/btn_eliminarLibro" android:layout_marginTop="5dp"
             android:layout_below="@+id/txt_stock" android:layout_alignParentEnd="true"
             android:layout_alignParentRight="true" android:layout_marginRight="144dp" android:layout_marginEnd="144dp"
             android:layout_alignParentStart="true" android:layout_marginLeft="108dp" android:layout_marginStart="108dp"
             android:layout_alignParentLeft="true"/>
+
+    <view
+            class="android.view.View"
+            android:layout_width="fill_parent"
+            android:layout_height="3dp"
+            android:background="#9FC98D2A"/>
 
 
 </RelativeLayout>

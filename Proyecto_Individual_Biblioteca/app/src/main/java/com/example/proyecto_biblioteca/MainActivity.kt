@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.proyecto_biblioteca.Lectores.MenuLectores
 import com.example.proyecto_biblioteca.Libros.MenuLibros
+import com.example.proyecto_biblioteca.Solicitudes.MenuSolicitudes
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {

@@ -13,6 +13,10 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             android:usesCleartextTraffic="true">
+        <activity android:name=".Solicitudes.ListaSolicitud">
+        </activity>
+        <activity android:name=".Solicitudes.CrearSolicitud">
+        </activity>
         <activity android:name=".Lectores.ListaLector">
         </activity>
         <activity android:name=".Lectores.ActualizarLector">
@@ -21,7 +25,7 @@
         </activity>
         <activity android:name=".Lectores.ListaLectores">
         </activity>
-        <activity android:name=".MenuSolicitudes">
+        <activity android:name=".Solicitudes.MenuSolicitudes">
         </activity>
         <activity android:name=".Lectores.MenuLectores">
         </activity>

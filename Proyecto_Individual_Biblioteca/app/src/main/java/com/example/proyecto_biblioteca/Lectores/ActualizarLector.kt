@@ -29,7 +29,6 @@ class ActualizarLector : AppCompatActivity() {
         btn_actualizarLector.setOnClickListener {
             val cliente =
                 Lector(
-//                    null,
                     null,
                     null,
                     txt_actualizarId.text.toString().toInt(),

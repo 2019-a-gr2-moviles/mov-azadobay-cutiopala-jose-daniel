@@ -1,7 +1,8 @@
-package com.example.proyecto_biblioteca
+package com.example.proyecto_biblioteca.Solicitudes
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.example.proyecto_biblioteca.R
 
 class MenuSolicitudes : AppCompatActivity() {
 
