@@ -6,7 +6,7 @@ import com.example.proyecto_biblioteca.Libros.LibroAuxiliar
 class Solicitud (
     var id: Int?,
     var fecha: String?,
-    var prestamos: Boolean?,
+    var validez: Boolean?,
     var codigoCli: ClienteAuxiliar?,
     var codigoZap: LibroAuxiliar?
 ) {

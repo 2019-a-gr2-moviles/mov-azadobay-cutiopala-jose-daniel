@@ -7,4 +7,71 @@
         android:layout_height="match_parent"
         tools:context=".Solicitudes.CrearSolicitud">
 
+    <TextView
+            android:text="Datos del Lector"
+            android:layout_width="223dp"
+            android:layout_height="53dp"
+            android:id="@+id/textView31"
+            app:layout_constraintTop_toTopOf="parent" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp" android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp" android:layout_marginRight="8dp" android:layout_marginTop="60dp"
+            android:gravity="center" android:textStyle="bold" android:textAllCaps="true" android:textSize="18sp"/>
+    <TextView
+            android:text="N° Cédula"
+            android:layout_width="96dp"
+            android:layout_height="26dp"
+            android:id="@+id/textView32" android:textStyle="bold"
+            android:textAllCaps="true" android:textSize="16dp" app:layout_constraintTop_toBottomOf="@+id/textView31"
+            android:layout_marginStart="28dp" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="28dp" android:layout_marginTop="56dp"/>
+    <EditText
+            android:layout_width="243dp"
+            android:layout_height="46dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_crearSolicitudCedula"
+            app:layout_constraintTop_toTopOf="@+id/textView32"
+            app:layout_constraintBottom_toBottomOf="@+id/textView32"
+            app:layout_constraintStart_toEndOf="@+id/textView32" android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp" app:layout_constraintVertical_bias="0.45" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"
+            app:layout_constraintHorizontal_bias="0.1"/>
+    <TextView
+            android:text="Datos del Libro"
+            android:layout_width="205dp"
+            android:layout_height="48dp"
+            android:id="@+id/textView33" android:textSize="18sp"
+            android:textStyle="bold" android:textAllCaps="true" android:gravity="center" android:layout_marginTop="36dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_crearSolicitudCedula" android:layout_marginStart="8dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="8dp" android:layout_marginEnd="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginRight="8dp"/>
+    <TextView
+            android:text="Título:"
+            android:layout_width="84dp"
+            android:layout_height="35dp"
+            android:textSize="16sp" android:textStyle="bold"
+            android:textAllCaps="true" android:layout_marginTop="44dp"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" android:layout_marginStart="44dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginLeft="44dp"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toStartOf="@+id/txt_crearSolicitudLibro"
+            android:layout_marginRight="8dp" android:id="@+id/textView35" app:layout_constraintHorizontal_bias="0.0"/>
+    <EditText
+            android:layout_width="234dp"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            android:ems="10"
+            android:id="@+id/txt_crearSolicitudLibro"
+            app:layout_constraintTop_toTopOf="@+id/textView35"
+            app:layout_constraintBottom_toBottomOf="@+id/textView35" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="24dp" android:layout_marginRight="24dp" app:layout_constraintVertical_bias="0.0"/>
+    <Button
+            android:text="Solicitud"
+            android:layout_width="169dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_crearSolicitud" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp" android:layout_marginTop="52dp"
+            app:layout_constraintTop_toBottomOf="@+id/txt_crearSolicitudLibro"
+            app:layout_constraintHorizontal_bias="0.511" android:textStyle="bold" android:textAllCaps="true"
+            android:textSize="24sp"/>
 </androidx.constraintlayout.widget.ConstraintLayout>

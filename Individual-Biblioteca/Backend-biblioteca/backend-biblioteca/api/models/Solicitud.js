@@ -16,7 +16,7 @@ module.exports = {
 
     prestamo: {
       type: 'boolean',
-      defaultsTo: false
+      defaultsTo: true
 
     },
 
