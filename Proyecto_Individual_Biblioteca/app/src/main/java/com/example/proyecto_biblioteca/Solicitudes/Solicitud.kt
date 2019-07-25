@@ -5,9 +5,9 @@ import com.example.proyecto_biblioteca.Libros.LibroAuxiliar
 
 class Solicitud (
     var id: Int?,
-    var fecha: String?,
-    var validez: Boolean?,
-    var codigoCli: ClienteAuxiliar?,
-    var codigoZap: LibroAuxiliar?
+    var fecha: String,
+    //var validez: Boolean?,
+    var idLector: ClienteAuxiliar = ClienteAuxiliar(),
+    var idLibro: LibroAuxiliar = LibroAuxiliar()
 ) {
 }

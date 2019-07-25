@@ -14,12 +14,6 @@ module.exports = {
       required: true
     },
 
-    prestamo: {
-      type: 'boolean',
-      defaultsTo: true
-
-    },
-
     idLibro: {
       model: 'libro',
     },

@@ -1,6 +1,5 @@
 package com.example.proyecto_biblioteca.Solicitudes
 
-import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -40,7 +39,7 @@ class CrearSolicitud : AppCompatActivity() {
                 try {
 
                     val zapato = listaZapatos.find { zapato ->
-                        zapato.titulo == txt_crearSolicitudLibro.text.toString()
+                        zapato.id == txt_crearSolicitudLibro.text.toString().toInt()
                     }
 
                     val cliente = listaClientes.find { cliente ->
@@ -53,14 +52,9 @@ class CrearSolicitud : AppCompatActivity() {
                         val compra = Solicitud(
                             null,
                             fechaActual,
-                            null,
-                            ClienteAuxiliar(cliente.id, null, null, null),
-                            LibroAuxiliar(zapato.id,
-                                null,
-                                null,
-                                null,
-                                null,
-                                null)
+                            //null
+                            ClienteAuxiliar(),
+                            LibroAuxiliar()
                         )
 
 
@@ -141,8 +135,8 @@ class CrearSolicitud : AppCompatActivity() {
             val json = """
             {
             "fecha": "${compra.fecha}",
-            "idLector": ${compra.codigoCli!!.id},
-            "idLibro": ${compra.codigoZap!!.id}
+            "idLibro": ${compra.idLector!!.id},
+            "idLector": ${compra.idLibro!!.id}
                         }
                     """
 

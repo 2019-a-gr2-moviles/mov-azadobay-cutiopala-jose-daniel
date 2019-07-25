@@ -47,24 +47,6 @@
             android:layout_marginRight="5dp" android:layout_marginEnd="5dp" android:layout_alignEnd="@+id/textView28"
             android:textStyle="bold"/>
     <TextView
-            android:text="Préstamo"
-            android:layout_width="130dp"
-            android:layout_height="30dp" android:id="@+id/textView30" android:layout_marginTop="5dp"
-            android:layout_below="@+id/textView29" android:layout_marginLeft="0dp" android:layout_marginStart="0dp"
-            android:layout_alignLeft="@+id/textView29" android:layout_alignStart="@+id/textView29"
-            android:gravity="center_vertical" android:layout_alignRight="@+id/textView29"
-            android:layout_marginRight="0dp" android:layout_marginEnd="0dp" android:layout_alignEnd="@+id/textView29"
-            android:textStyle="bold" android:textAllCaps="true"/>
-    <Button
-            android:text="Realizar Devolución"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" android:id="@+id/btn_devolucion"
-            android:layout_marginLeft="102dp" android:layout_marginStart="102dp"
-            android:layout_alignLeft="@+id/textView30" android:layout_alignStart="@+id/textView30"
-            android:layout_marginTop="19dp"
-            android:layout_below="@+id/textView37" android:layout_alignParentEnd="true"
-            android:layout_alignParentRight="true" android:layout_marginRight="114dp" android:layout_marginEnd="114dp"/>
-    <TextView
             android:text="TextView"
             android:layout_width="235dp"
             android:layout_height="30dp" android:id="@+id/txt_idSolicitud" android:layout_alignTop="@+id/textView25"
@@ -109,28 +91,19 @@
             android:layout_marginStart="-1dp" android:layout_alignLeft="@+id/txt_cedulaSolicitud"
             android:layout_alignStart="@+id/txt_cedulaSolicitud"/>
     <TextView
-            android:text="TextView"
-            android:layout_width="235dp"
-            android:layout_height="30dp" android:id="@+id/txt_prestamoSolicitud" android:layout_marginTop="5dp"
-            android:layout_below="@+id/txt_fechaSolicitud" android:layout_alignRight="@+id/txt_fechaSolicitud"
-            android:layout_marginRight="0dp" android:layout_marginEnd="0dp"
-            android:layout_alignEnd="@+id/txt_fechaSolicitud" android:layout_marginLeft="2dp"
-            android:layout_marginStart="2dp" android:layout_alignLeft="@+id/txt_fechaSolicitud"
-            android:layout_alignStart="@+id/txt_fechaSolicitud"/>
-    <TextView
             android:text="Libro"
             android:layout_width="130dp"
-            android:layout_height="30dp" android:id="@+id/textView37" android:layout_marginTop="5dp"
-            android:layout_below="@+id/textView30" android:layout_marginLeft="3dp" android:layout_marginStart="3dp"
-            android:layout_alignLeft="@+id/textView30" android:layout_alignStart="@+id/textView30"
+            android:layout_height="30dp" android:id="@+id/textView37" android:layout_marginTop="8dp"
+            android:layout_below="@+id/textView29" android:layout_marginLeft="2dp" android:layout_marginStart="2dp"
+            android:layout_alignLeft="@+id/textView29" android:layout_alignStart="@+id/textView29"
             android:textStyle="bold" android:textAllCaps="true" android:gravity="center_vertical"/>
     <TextView
             android:text="TextView"
             android:layout_width="230dp"
-            android:layout_height="30dp" android:id="@+id/txt_libroSolicitud" android:layout_marginTop="5dp"
-            android:layout_below="@+id/txt_prestamoSolicitud" android:layout_marginLeft="-1dp"
-            android:layout_marginStart="-1dp" android:layout_alignLeft="@+id/txt_prestamoSolicitud"
-            android:layout_alignStart="@+id/txt_prestamoSolicitud" android:layout_alignRight="@+id/txt_prestamoSolicitud"
+            android:layout_height="30dp" android:id="@+id/txt_libroSolicitud" android:layout_marginTop="12dp"
+            android:layout_below="@+id/txt_fechaSolicitud"
+            android:layout_alignRight="@+id/txt_fechaSolicitud"
             android:layout_marginRight="-2dp" android:layout_marginEnd="-2dp"
-            android:layout_alignEnd="@+id/txt_prestamoSolicitud"/>
+            android:layout_alignEnd="@+id/txt_fechaSolicitud"
+    />
 </RelativeLayout>

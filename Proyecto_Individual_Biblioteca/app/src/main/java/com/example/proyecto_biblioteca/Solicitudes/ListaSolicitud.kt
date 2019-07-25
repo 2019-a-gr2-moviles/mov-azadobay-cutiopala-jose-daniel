@@ -4,13 +4,11 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
-import androidx.recyclerview.widget.DefaultItemAnimator
-import androidx.recyclerview.widget.LinearLayoutManager
+
 import com.beust.klaxon.Klaxon
 import com.example.proyecto_biblioteca.Constantes
 import com.example.proyecto_biblioteca.R
 import com.github.kittinunf.fuel.httpGet
-import com.github.kittinunf.fuel.httpPut
 import com.github.kittinunf.result.Result
 import kotlinx.android.synthetic.main.activity_lista_solicitud.*
 
@@ -28,8 +26,8 @@ class ListaSolicitud : AppCompatActivity() {
     fun iniciarRecyclerView(listaCompras: ArrayList<Solicitud>, actividad: ListaSolicitud, recyclerView: androidx.recyclerview.widget.RecyclerView) {
         val adaptadorCompra = AdaptadorListaSolicitud(listaCompras, actividad, recyclerView)
         rv_listaSolicitud.adapter = adaptadorCompra
-        rv_listaSolicitud.itemAnimator = DefaultItemAnimator()
-        rv_listaSolicitud.layoutManager = LinearLayoutManager(actividad)
+        rv_listaSolicitud.itemAnimator = androidx.recyclerview.widget.DefaultItemAnimator()
+        rv_listaSolicitud.layoutManager = androidx.recyclerview.widget.LinearLayoutManager(actividad)
 
         adaptadorCompra.notifyDataSetChanged()
     }
@@ -56,8 +54,14 @@ class ListaSolicitud : AppCompatActivity() {
                         compras?.forEach { compra ->
                             (
                                     this.listaCompras.add(compra)
+
                                     )
                         }
+
+                        Log.i("http","Hola: ${this.listaCompras[0].idLector.nombre.toString()}")
+
+
+
 
                         runOnUiThread {
                             iniciarRecyclerView(listaCompras, this, rv_listaSolicitud)
@@ -68,28 +72,28 @@ class ListaSolicitud : AppCompatActivity() {
     }
 
     fun actualizarCompra(compra: Solicitud) {
-        val url = Constantes.ip + Constantes.compra + "/${compra.id}"
-        val json = """
-            {
-            "prestamo": "${compra.validez}"
-            }
-                    """
-        Log.i("http", url)
-        Log.i("http", json)
-        url.httpPut().body(json)
-            .responseString { request, response, result ->
-                when (result) {
-                    is Result.Failure -> {
-                        val ex = result.getException()
-                        Log.i("http", "Error: ${ex.message}")
-                    }
-                    is Result.Success -> {
-                        runOnUiThread {
-                            irListaCompras()
-                        }
-                    }
-                }
-            }
+//        val url = Constantes.ip + Constantes.compra + "/${compra.id}"
+//        val json = """
+//            {
+//            "prestamo": "${compra.validez}"
+//            }
+//                    """
+//        Log.i("http", url)
+//        Log.i("http", json)
+//        url.httpPut().body(json)
+//            .responseString { request, response, result ->
+//                when (result) {
+//                    is Result.Failure -> {
+//                        val ex = result.getException()
+//                        Log.i("http", "Error: ${ex.message}")
+//                    }
+//                    is Result.Success -> {
+//                        runOnUiThread {
+//                            irListaCompras()
+//                        }
+//                    }
+//                }
+//            }
     }
 
     fun irListaCompras() {
